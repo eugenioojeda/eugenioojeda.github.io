@@ -1,3 +1,7 @@
+# Borra el archivo actual para evitar residuos
+rm _config.yml
+
+# Créalo de nuevo con formato limpio
 cat > _config.yml <<EOF
 title: "Mi página"
 EOF
