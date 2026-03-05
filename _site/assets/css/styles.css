@@ -39,9 +39,13 @@ body {
   border-radius: var(--radius); box-shadow: var(--shadow);
 }
 
-h2 { font-size: 20px; font-weight: 700; margin-bottom: 24px; color: var(--brand); text-transform: uppercase; letter-spacing: 0.05em; }
+img{margin-left: 200px }
 
-.grid2 { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; }
+img:hover{scale: 1.5 }
+
+h2 { font-size: 20px; font-weight: 700; margin-bottom: 24px; margin-left: 210px; color: var(--text); text-transform: uppercase; letter-spacing: 0.05em; }
+
+.grid2 { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px }
 
 /* Perfil más limpio */
 .profile { display: flex; flex-direction: column; gap: 20px; }
@@ -57,7 +61,7 @@ h2 { font-size: 20px; font-weight: 700; margin-bottom: 24px; color: var(--brand)
   padding: 4px 12px; border-radius: 6px; font-size: 13px; font-weight: 500;
   background: #f1f5f9; color: #475569; border: 1px solid transparent;
 }
-.pill:hover { background: var(--brand); color: white; }
+.pill:hover { background: var(--text); color: white; }
 
 /* Cards de Proyectos */
 .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
@@ -65,7 +69,7 @@ h2 { font-size: 20px; font-weight: 700; margin-bottom: 24px; color: var(--brand)
   background: var(--card); border-radius: var(--radius); padding: 20px;
   border: 1px solid var(--line); display: flex; flex-direction: column; gap: 12px;
 }
-.card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); border-color: var(--brand); }
+.card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); border-color: var(--text); }
 
 /* Texto Muted corregido */
 .muted { color: var(--muted); font-size: 15px; margin: 0; /* Eliminado el margen de 50px */ }
@@ -80,8 +84,8 @@ h2 { font-size: 20px; font-weight: 700; margin-bottom: 24px; color: var(--brand)
   cursor: pointer; text-decoration: none; color: var(--text); font-weight: 500;
   display: inline-flex; align-items: center; justify-content: center;
 }
-.btn:hover { background: #f8fafc; border-color: var(--brand); color: var(--brand); }
-.btn.active { background: var(--brand); color: white; border-color: var(--brand); }
+.btn:hover { background: #f8fafc; border-color: var(--text); color: var(--text); }
+.btn.active { background: var(--text); color: white; border-color: var(--text); }
 
 /* Responsive */
 @media (max-width: 850px) {
