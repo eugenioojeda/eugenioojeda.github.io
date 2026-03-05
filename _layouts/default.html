@@ -5,9 +5,99 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{{ page.title | default: site.title }}</title>
   <meta name="description" content="CV y repositorios destacados en GitHub." />
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="_site/assets/css/styles.css">
 </head>
 <body>
-  {{ content }}
+
+  <div class="container">
+    <header class="topbar">
+      <div>
+        <h1 class="title">Eugenio Ojeda Ojeda</h1>
+        <div class="subtitle">Estudiante de Desarrollo de Aplicaciones Multiplataforma (1º DAM)</div>
+      </div>
+      <nav style="display:flex;gap:10px">
+        <a class="btn" href="https://www.linkedin.com/in/eugenio-ojeda-ojeda-7a642a359/" target="_blank">LinkedIn</a>
+        <a class="btn" href="https://github.com/eugenioojeda" target="_blank">GitHub</a>
+        <a class="btn" href="mailto:eugenio.reboot@gmail.com">Email</a>
+      </nav>
+    </header>
+
+    <section class="section">
+      <h2>Sobre mí</h2>
+      <div class="grid2">
+        <div class="profile">
+          <img src="_site/assets/img/perfil1.jpg" alt="Foto de perfil">
+          <div class="bio">
+            <p class="muted" style="margin:0">
+              Desarrollador aprendiz apasionado por crear soluciones web eficientes, útiles y con diseños atractivos.
+              Con
+              una formación de dos bootcamps de 6 meses cada uno, el primero de e-commerce y desarrollo web full stack y
+              el segundo de especialista en IA y análisis de Big Data en Reboot Academy.
+              Actualmente cursando el primer año del Grado Superior de Desarrollo de Aplicaciones Multiplataforma (DAM).
+
+            </p>
+
+            <h3>Tecnologías utilizadas</h3>
+            <div class="pillrow">
+              <span class="pill">Git</span><br>
+              <span class="pill">Java</span><br>
+              <span class="pill">SQL</span><br>
+              <span class="pill">HTML</span><br>
+              <span class="pill">CSS</span><br>
+              <span class="pill">JavaScript</span><br>
+              <span class="pill">Python</span><br>
+              <span class="pill">Php</span><br>
+              <span class="pill">Wordpress</span><br>
+              <span class="pill">Docker</span><br>
+              <br>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 style="margin:0 0 10px">Experiencia / Proyectos de clase</h3>
+          <ul class="muted" style="margin:0;padding-left:18px">
+            <li>Proyecto bootcamp e-commerce y desarrollo web full stack: Rooftop Rush</li>
+            <li>Proyecto bootcamp especialista en IA y analista de Big Data: Knowledge Navigator
+            <li>Proyecto DAM: “App de Notas” (CRUD + BBDD)</li>
+            <li>Proyecto Java: “Gestor de tareas” (POO + tests)</li>
+          </ul>
+
+          <h3 style="margin:16px 0 10px">Objetivo</h3>
+          <p class="muted" style="margin:0">
+            Mi objetivo actual es aprender nuevas tecnologías para encontrar la manera de combinarlas con el fin de
+            desarrollar aplicaciones/soluciones informáticas aplicables al mundo laboral actual.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Proyectos destacados (topic: <code>showcase</code>)</h2>
+      <div id="featured" class="cards"></div>
+      <p class="muted" style="margin:10px 0 0">
+        <!--Para que un repo salga aquí, añade el topic <b>showcase</b> en GitHub.-->
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Mis repositorios</h2>
+      <div class="toolbar">
+        <input id="q" class="input" placeholder="Buscar repositorios..." />
+        <select id="sort" class="select">
+          <option value="updated">Ordenar: actividad reciente</option>
+          <option value="stars">Ordenar: estrellas</option>
+          <option value="name">Ordenar: nombre</option>
+        </select>
+        <button class="btn active" data-topic="all">Todos</button>
+        <button class="btn" data-topic="showcase">showcase</button>
+        <button class="btn" data-topic="web">web</button>
+        <button class="btn" data-topic="backend">backend</button>
+      </div>
+
+      <div style="height:12px"></div>
+      <div id="repos" class="cards"></div>
+    </section>
+  </div>
 </body>
 </html>
